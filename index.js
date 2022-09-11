@@ -1,6 +1,7 @@
 const slides = document.getElementsByClassName('item');
 let slidePosition = 0;
 const totalSlides = slides.length;
+const counter = document.getElementById('counter');
 
 document.getElementById('next').addEventListener('click', moveToNextSlide);
 document.getElementById('prev').addEventListener('click', moveToPrevSlide);
@@ -17,11 +18,13 @@ function moveToNextSlide() {
     
     if (slidePosition === totalSlides - 1) {
         slidePosition = 0;
+        
     } else {
         slidePosition++;
     }
     
     slides[slidePosition].classList.add("visible");
+    counter.innerHTML = slidePosition + 1 + '/' + totalSlides;
 }
 
 function moveToPrevSlide() {
@@ -34,4 +37,5 @@ function moveToPrevSlide() {
     }
     
     slides[slidePosition].classList.add("visible");
+    counter.innerHTML = slidePosition + 1 + '/' + totalSlides;
 }

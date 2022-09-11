@@ -64,3 +64,17 @@
         opacity: 1;
     }
 }
+p {
+    margin: 0;
+}
+#counter{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    color: white;
+    margin: 0;
+    top: 2%;
+    left: 1%;
+    opacity: 90%;
+}
