@@ -47,6 +47,15 @@
     margin-right: 20px;   
 }
 
+.carousel .actions button {
+    opacity: 50%;
+    color: grey;
+}
+
+.carousel .actions button:hover {
+    opacity: 90%;
+}
+
 @keyframes fadeVisibility {
     0% {
         opacity: 0;
